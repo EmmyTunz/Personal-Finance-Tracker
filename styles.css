@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.side-bar {
+    margin-right: auto;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+}
+
+.content-body {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* align-items: center; */
+}
+
+.services-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    min-height: 100px;
+    background-color: aqua;
+    border-radius: 20px;
+}
