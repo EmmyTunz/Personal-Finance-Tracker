@@ -1,20 +1,32 @@
 body {
     display: flex;
-    flex-direction: column;
     margin: 0;
+    gap: 20px;
+    height: 100vh;
 }
 
 .side-bar {
     margin-right: auto;
     background-color: blanchedalmond;
-    border-radius: 20px;
+    width: 250px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    gap: 10px;
+    
 }
 
 .content-body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 20px;
-    /* align-items: center; */
 }
 
 .services-bar {
