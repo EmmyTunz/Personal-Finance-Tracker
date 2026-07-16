@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #2f5df5;
+    --primary-color-dark: #1e3fa0;
+    --color-bg: #f9fafb;
+    --color-card-bg: #ffffff;
+    --color-text: #1a1a1a;
+    --color-text-muted: #6b7280;
+    --color-border: #e5e7eb;
+
+    --font-heading: "Century Gothic", serif;
+    --font-body: "Century Gothic", Arial, sans-serif;
+}
+
+#transaction-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 1rem;
+    background-color: var(--color-card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid var(--color-border)
+}
+
+#transaction-form label {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: -0.5rem;
+}
+
+#transaction-form input,
+#transaction-form select {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#transaction-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#transaction-form button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+#status-message {
+    font-weight: bold;
+}
+

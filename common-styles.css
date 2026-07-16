@@ -1,7 +1,27 @@
+:root {
+    --primary-color: #2f5df5;
+    --primary-color-dark: #1e3fa0;
+    --color-bg: #f9fafb;
+    --color-card-bg: #ffffff;
+    --color-text: #1a1a1a;
+    --color-text-muted: #6b7280;
+    --color-border: #e5e7eb;
+
+    --font-heading: "Century Gothic", serif;
+    --font-body: "Century Gothic", Arial, sans-serif;
+}
+
 body {
     margin: 0;
     gap: 20px;
     height: 100%;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+h1, h2 {
+    font-family: var(--font-heading);
 }
 
 .page-wrapper {
