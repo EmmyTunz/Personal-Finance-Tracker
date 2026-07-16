@@ -1,17 +1,25 @@
 body {
-    display: flex;
     margin: 0;
     gap: 20px;
-    height: 100vh;
+    height: 100%;
+}
+
+.page-wrapper {
+    display: flex;
+    min-height: 100vh;
 }
 
 .side-bar {
+    flex-shrink: 0;
     margin-right: auto;
-    background-color: blanchedalmond;
+    background-color: #f4f4f4;
     width: 250px;
+    padding: 10px;
 }
 a {
     text-decoration: none;
+    color: #333;
+    padding: 0.5rem 0;
 }
 ul {
     display: flex;
@@ -23,22 +31,10 @@ ul {
 }
 
 .content-body {
+    flex: 1;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.services-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 200px;
-    min-height: 100px;
-    background-color: aqua;
-    border-radius: 20px;
-}

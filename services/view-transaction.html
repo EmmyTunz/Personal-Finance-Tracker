@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common-styles.css">
+    <link rel="stylesheet" href="../common-styles.css">
     <title>All Transactions</title>
 </head>
 <body>
-    <h2>Transactions</h2>
-    <a href="transaction.html">Add new transaction</a>
-    <ul id="transaction-list">
-    <!-- JS will fill this in -->
-    </ul>
+    <div class="page-wrapper">
+        <div class="side-bar">
+            <h1>My Wallet</h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="transaction.html">Add Transaction</a></li>
+                <li><a href="budget.html">Create Budget</a></li>
+                <li><a href="view-budget.html">View Budget / Limits</a></li>
+                <li><a href="new-savings-plan.html">Create New Savings Plan</a></li>
+                <li><a href="view-savings-plan.html">View Savings Plan</a></li>
+                <li><a href="monthly-report.html">Request Monthly Report</a></li>
+            </ul>
+        </div>
+        <div class="content-body">
+            <h1>All Transactions</h1>
+            <ul id="transaction-list">
+            </ul>
+        </div>
+    </div>
     <script src="view-transaction.js"></script>
 </body>
 </html>
