@@ -3,11 +3,11 @@ async function handleSubmit(event) {
     event.preventDefault();
 
     const newTransaction = {
-        id: 0,
+        // id: 0,
         amount: Number(document.getElementById("amount").value),
         type: document.getElementById("type").value,
         category: document.getElementById("category").value,
-        date: new Date().toISOString(),
+        // date: new Date().toISOString(),
         note: document.getElementById("note").value,
     };
 
