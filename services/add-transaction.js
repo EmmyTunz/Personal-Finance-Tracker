@@ -2,12 +2,18 @@ const BASE_URL = "https://my-wallet-3a6i.onrender.com";
 async function handleSubmit(event) {
     event.preventDefault();
 
+    const submitBtn = document.getElementById("submit-btn");
+    const submitText = document.getElementById("submit-text");
+    const submitSpinner = document.getElementById("submit-spinner");
+
+    submitBtn.disabled = true;
+    submitText.textContent = "Adding...";
+    submitSpinner.style.display = "block";
+
     const newTransaction = {
-        // id: 0,
         amount: Number(document.getElementById("amount").value),
         type: document.getElementById("type").value,
         category: document.getElementById("category").value,
-        // date: new Date().toISOString(),
         note: document.getElementById("note").value,
     };
 
@@ -22,7 +28,13 @@ async function handleSubmit(event) {
     if (response.ok) {
         statusMessage.textContent = "Transaction added ✅";
         document.getElementById("transaction-form").reset();
+    } else {
+        statusMessage.textContent = "Something went wrong ❌";
     }
+
+    submitBtn.disabled = false;
+    submitText.textContent = "Add Transaction";
+    submitSpinner.style.display = "none";
 }
 
 document.getElementById("transaction-form").addEventListener("submit", handleSubmit);

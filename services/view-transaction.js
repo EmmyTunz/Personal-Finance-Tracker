@@ -12,6 +12,8 @@ async function loadTransactions() {
     item.textContent = `${txn.date} - ${txn.category} - N${txn.amount} - description: ${txn.note}`;
     list.appendChild(item);
   });
+
+  document.getElementById("view-transaction-spinner").style.display = "none";
 }
 
 loadTransactions();

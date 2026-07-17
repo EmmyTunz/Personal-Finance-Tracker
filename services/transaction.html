@@ -40,7 +40,10 @@
                 <label for="note">Note (optional)</label>
                 <input type="text" id="note" name="note">
 
-                <button type="submit">Add Transaction</button>
+                <button type="submit" id="submit-btn">
+                    <span id="submit-text">Add Transaction</span>
+                    <div class="spinner" id="submit-spinner" style="display: none;"></div>
+                </button>
             </form>
             <div id="status-message"></div>
         </div>
