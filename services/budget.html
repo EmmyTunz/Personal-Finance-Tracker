@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../common-styles.css">
+    <link rel="stylesheet" href="form-styles.css">
     <title>New Budget</title>
 </head>
 <body>
@@ -23,8 +24,33 @@
         </div>
         <div class="content-body">
             <h1>Create New Budget / Set your Limits for the month</h1>
-            <p>Available in V2</p>
+            <form id="transaction-form">
+                <label for="budget">Total Budget (₦)</label>
+                <input type="number" id="budget_amount_field" name="budget" step="0.01" required>
+                
+                <label for="feeding">Feeding (₦)</label>
+                <input type="number" id="feeding_amount_field" name="feeding" required>
+
+                <label for="airtime_data">Airtime / Data (₦)</label>
+                <input type="number" id="airtime_amount_field" name="airtime_data" required>
+
+                <label for="electricity">Electricity (₦)</label>
+                <input type="number" id="electricity_amount_field" name="electricity" required>
+
+                <label for="betting">Betting (₦)</label>
+                <input type="number" id="betting_amount_field" name="betting" required>
+
+                <label for="transfer">Transfer (₦)</label>
+                <input type="number" id="transfer_amount_field" name="transfer" required>
+
+                <button type="submit" id="submit-btn">
+                    <span id="submit-text">Create Budget</span>
+                    <div class="spinner" id="submit-spinner" style="display: none;"></div>
+                </button>
+            </form>
+            <div id="status-message"></div>
         </div>
     </div>
+    <script src="budget.js"></script>
 </body>
 </html>
