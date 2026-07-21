@@ -11,7 +11,7 @@
     --font-body: "Century Gothic", Arial, sans-serif;
 }
 
-#transaction-list {
+#list {
     list-style: none;
     padding: 0;
     display: flex;
@@ -19,8 +19,7 @@
     gap: 0.75rem;
     max-width: 600px;
 }
-
-#transaction-list li {
+#list li {
     background-color: var(--color-card-bg);
     border: 1px solid var(--color-border);
     border-radius: 8px;

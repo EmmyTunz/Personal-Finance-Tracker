@@ -4,7 +4,7 @@ async function loadTransactions() {
   const data = await response.json();
 
   const transactions = data.map(item => item.Transaction);
-  const list = document.getElementById("transaction-list");
+  const list = document.getElementById("list");
   list.innerHTML = "";
 
   transactions.forEach(txn => {
